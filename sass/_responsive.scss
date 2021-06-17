@@ -1,0 +1,118 @@
+        //dekstop box 1
+        @include media-md {
+            .box {
+                width: 60vw;
+            }
+            .bttn {
+                display: flex;
+                justify-content: space-around;
+            }
+            .box__2 {
+                >div {
+                    display: flex;
+                    justify-content: space-around;
+                    div {
+                        margin-right: 10px;
+                    }
+                }
+                .normal {
+                    color: $darkGray;
+                    font-size: .9em;
+                    position: relative;
+                    margin-bottom: 4em;
+                    &:after {
+                        content: '';
+                        height: 2px;
+                        width: 50px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        position: absolute;
+                        bottom: 28px;
+                        left: 94%;
+                        -webkit-transform: rotate( 90deg);
+                        transform: rotate( 90deg);
+                    }
+                }
+            }
+            .rewardarea {
+                display: flex;
+                justify-content: space-between;
+            }
+            .response {
+                width: 50vw;
+                left: 50%;
+                transform: translateX(-53%);
+            }
+            .responsedone {
+                width: 40vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        
+        @include media-sm {
+            .bookmarkbtn {
+                display: none;
+            }
+        }
+        
+        @include media-lg {
+            .box__2 {
+                .normal {
+                    color: $darkGray;
+                    font-size: .9em;
+                    position: relative;
+                    margin-bottom: 4em;
+                    &:after {
+                        content: '';
+                        height: 2px;
+                        width: 50px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        position: absolute;
+                        bottom: 28px;
+                        left: 114%;
+                        -webkit-transform: rotate( 90deg);
+                        transform: rotate( 90deg);
+                    }
+                }
+            }
+            .responsedone {
+                width: 30vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .donebox {
+                border: 1px solid rgba(0, 0, 0, 0.1);
+                background: white;
+                position: relative;
+                top: 28%;
+                border-radius: 10px;
+                margin: 16px;
+            }
+        }
+        
+        @include media-xlg {
+            .box__2 {
+                .normal {
+                    color: $darkGray;
+                    font-size: .9em;
+                    position: relative;
+                    margin-bottom: 4em;
+                    &:after {
+                        content: '';
+                        height: 2px;
+                        width: 50px;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        position: absolute;
+                        bottom: 28px;
+                        left: 134%;
+                        -webkit-transform: rotate( 90deg);
+                        transform: rotate( 90deg);
+                    }
+                }
+            }
+            .responsedone {
+                width: 20vw;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
